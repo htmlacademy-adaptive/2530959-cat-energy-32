@@ -6,6 +6,10 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/favicon-icon-152.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -37,7 +41,11 @@
       <div class="promo__wrapper">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="#" width="280" height="270" alt="Упаковка еды для котов со вкусом курицы">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/promo-desktop@1x.png 1x, images/promo-desktop@2x.png 2x" type="image/png" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="images/promo-tablet@1x.png 1x, images/promo-tablet@2x.png 2x" type="image/png" width="709" height="609">
+          <img class=" promo__image" src="images/promo-mobile@1x.png" srcset="images/promo-mobile@2x.png 2x" width="280" height="270" alt="Упаковка еды для котов со вкусом курицы">
+        </picture>
         <a class="promo__link button" href="#">Подобрать программу</a>
       </div>
     </section>
@@ -104,10 +112,18 @@
         </div>
         <div class="example__slider">
           <div class="example__slider-fat">
-            <img class="example__image-fat" src="#" width="140" height="256" alt="толстый кот">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/fat-cat-tab-desk@1x.png 1x, images/fat-cat-tab-desk@2x.png 2x" type="image/png" width="560" height="512">
+              <source media="(min-width: 768px)" srcset="images/fat-cat-tab-desk@1x.png 1x, images/fat-cat-tab-desk@2x.png 2x" type="image/png" width="560" height="512">
+              <img class="example__image-slim" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="худой кот">
+            </picture>
           </div>
           <div class="example__slider-slim">
-            <img class="example__image-slim" src="#" width="140" height="256" alt="худой кот">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/slim-cat-tab-desk@1x.png 1x, images/slim-cat-tab-desk@2x.png 2x" type="image/png" width="560" height="512">
+              <source media="(min-width: 768px)" srcset="images/slim-cat-tab-desk@1x.png 1x, images/slim-cat-tab-desk@2x.png 2x" type="image/png" width="560" height="512">
+              <img class="example__image-slim" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="худой кот">
+            </picture>
           </div>
           <div class="example__range-bar">
             <button class="example__range-toogle" type="button">
@@ -125,8 +141,11 @@
           Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="contact__map-wrapper">
-        <img class="contact__image" src="#" width="320" height="362" alt="Местоположение магазина по адресу: ул. Большая
-        Конюшенная, д. 19/8">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" type="image/png" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" type="image/png" width="768" height="400">
+          <img class="contact__image" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362" alt="Местоположение магазина по адресу: ул. Большая Конюшенная, д. 19/8">
+        </picture>
       </div>
     </section>
   </main>
