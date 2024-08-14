@@ -1,0 +1,49 @@
+// .catalog-product {
+
+// }
+
+.catalog-product__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+// .catalog-product__wrapper {
+
+// }
+
+// .catalog-product__list {
+//   list-style-type: none;
+// }
+
+// .catalog-product__card {
+
+// }
+
+.catalog-product__link {
+  text-decoration: none;
+}
+
+.catalog-product__title-card {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-product__text {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-color-text;
+}
+
+.catalog-product__button--more {
+  background-color: #f2f2f2;
+  color: $base-color-text;
+}
