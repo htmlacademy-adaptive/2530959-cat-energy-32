@@ -12,6 +12,17 @@
 
 .programm__wrapper {
   background-color: #f2f2f2;
+  background-repeat: no-repeat;
+}
+
+.programm__wrapper--slim {
+  background-image: url("../../icons/cat-slim.svg");
+  background-size: 36px 50px;
+}
+
+.programm__wrapper--weight-gain {
+  background-image: url("../../icons/cat-pro.svg");
+  background-size: 67px 28px;
 }
 
 .programm__title {

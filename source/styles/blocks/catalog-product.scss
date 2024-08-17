@@ -43,6 +43,10 @@
   color: $base-color-text;
 }
 
+.catalog-product__card--more {
+  background-image: url("../../icons/plus-catalog.svg");
+}
+
 .catalog-product__button--more {
   background-color: #f2f2f2;
   color: $base-color-text;

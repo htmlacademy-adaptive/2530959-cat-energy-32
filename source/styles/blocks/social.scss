@@ -3,13 +3,26 @@
 // }
 
 // .social__list {
-
+//   list-style-type: none;
 // }
 
 // .social__item {
 
 // }
 
-// .social__link {
+.social__link {
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
+}
 
-// }
+.social__link--vk {
+  mask-image: url("../../icons/vkontakte.svg");
+}
+
+.social__link--youtube {
+  mask-image: url("../../icons/youtube.svg");
+}
+
+.social__link--tg {
+  mask-image: url("../../icons/telegram.svg");
+}
