@@ -1,10 +1,13 @@
 .button {
+  display: block;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+  padding: 10px;
+  border: none;
   background-color: $bg-basic-green;
   text-decoration: none;
   text-transform: uppercase;

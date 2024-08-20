@@ -1,10 +1,17 @@
-.copyright-link__text {
-  color: $base-color-text;
-  font-size: 16px;
-  line-height: 20px;
+.copyright-link {
+  display: block;
+  color: #666666;
   text-decoration: none;
 }
 
+.copyright-link__text {
+  color: $base-color-text;
+}
+
 .copyright-link__logo {
-  color: #666666;
+  fill: currentColor;
+
+  &:hover {
+    color: #68b738;
+  }
 }
