@@ -1,13 +1,13 @@
 .card {
-  @media (min-width: 1300px) {
-    width: 245px;
+  @media (min-width: $tablet) {
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
+    width: 324px;
     box-sizing: border-box;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $desktop) {
+    width: 245px;
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
-    width: 324px;
     box-sizing: border-box;
   }
 }

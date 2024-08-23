@@ -26,6 +26,10 @@
   text-decoration: none;
 }
 
+.catalog-product__card {
+  position: relative;
+}
+
 .catalog-product__title-card {
   font-family: $oswald;
   font-weight: 400;
@@ -34,7 +38,7 @@
   color: #000000;
   text-transform: uppercase;
 
-  @media (min-width: 738px) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -56,13 +60,12 @@
 }
 
 .catalog-product__card--more {
-  @media (min-width: 1300px) {
-    width: 245px;
+  @media (min-width: $tablet) {
+    width: 324px;
   }
 
-  @media (min-width: 738px) {
-    width: 324px;
-    // background-size: 60px 60px;
+  @media (min-width: $desktop) {
+    width: 245px;
   }
 }
 
@@ -72,24 +75,15 @@
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+
+  @media (min-width: $tablet) {
+    width: 60px;
+    height: 60px;
+  }
 }
-
-
-// .catalog-product__card-show {
-//   background-image: url("../../icons/plus-catalog.svg");
-//   background-size: 30px 30px;
-//   background-repeat: no-repeat;
-//   background-position: center;
-
-//   @media (min-width: 1300px) {
-//     width: 245px;
-//   }
-
-//   @media (min-width: 738px) {
-//     width: 324px;
-//     background-size: 60px 60px;
-//   }
-// }
 
 .catalog-product__card-title {
   font-family: $oswald;
@@ -100,7 +94,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: 738px) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 24px;
   }

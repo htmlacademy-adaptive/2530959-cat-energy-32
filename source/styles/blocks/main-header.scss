@@ -1,7 +1,39 @@
 // .main-header {
-
+//   @media (min-width: $desktop) {
+//     width: 1440px;
+//   }
 // }
 
-// .main-header__logo {
+.main-header--index {
+  margin-bottom: 20px;
 
-// }
+  @media (min-width: $desktop) {
+    display: block;
+    background-image: url("../../images/hero-cat-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 694px, 100%;
+    background-position: top right;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.main-header__logo-cat {
+  margin-right: 56px;
+  display: block;
+
+  @media (min-width: $tablet) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 14px;
+  }
+}
+
+.main-header__logo-text {
+  display: block;
+}
