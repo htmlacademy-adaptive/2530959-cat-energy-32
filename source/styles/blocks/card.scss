@@ -12,13 +12,27 @@
   }
 }
 
-// .card__text {
+.card__text {
+  grid-column: 2 / 3;
 
-// }
+  @media (min-width: $tablet) {
+    grid-column: 1 / 2;
+  }
+}
 
-// .card__discription {
+.card__discription {
+  margin-top: 75px;
+  margin-bottom: 21px;
 
-// }
+  @media (min-width: $tablet) {
+    margin: 0 0 37px;
+  }
+}
+
+.card__discription__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
 .card__option {
   font-family: $lato;
@@ -26,6 +40,11 @@
   font-size: 12px;
   line-height: 16px;
   color: $base-color-text;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .card__value {
@@ -34,4 +53,14 @@
   font-size: 12px;
   line-height: 16px;
   color: $base-color-text;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+.card__wrapper {
+  margin: 0 37px;
 }

@@ -1,13 +1,44 @@
-// .contact {
+.contact {
+  background-color: #f2f2f2;
 
-// }
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
 
-// .contact__wrapper {
+.contact__wrapper {
+  display: flex;
+  margin-top: 26px;
+  margin-bottom: 26px;
 
-// }
+  @media (min-width: $tablet) {
+    margin: 60px auto;
+    justify-content: space-between;
+    width: 628px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    width: 565px;
+    height: 199px;
+    background-color: #ffffff;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    margin-top: 95px;
+    margin-left: 110px;
+  }
+}
 
 .contact__wrapper--catalog {
-  background-color: #f2f2f2;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .contact__text {
@@ -17,6 +48,13 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 165px;
+  }
 }
 
 .contact__address {
@@ -26,8 +64,30 @@
   font-style: normal;
   line-height: 20px;
   color: $base-color-text;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    width: 160px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: start;
+  }
+}
+
+.contact__city {
+  @media (min-width: $tablet) {
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 // .contact__map-wrapper {
 
 // }
+
+.contact__image {
+  display: block;
+  margin: auto;
+}
