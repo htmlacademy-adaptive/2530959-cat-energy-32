@@ -1,18 +1,22 @@
 .contact {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 
   @media (min-width: $desktop) {
     position: relative;
   }
 }
 
+.contact__catalog {
+  background-color: #f2f2f2;
+}
+
 .contact__wrapper {
   display: flex;
-  margin-top: 26px;
-  margin-bottom: 26px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet) {
-    margin: 60px auto;
+    padding: 60px 70px;
     justify-content: space-between;
     width: 628px;
   }
@@ -24,22 +28,17 @@
     background-color: #ffffff;
     padding: 60px 80px;
     box-sizing: border-box;
-    margin-top: 95px;
-    margin-left: 110px;
+    top: 95px;
+    left: calc(50% - 610px);
   }
 }
 
-.contact__wrapper--catalog {
-  padding-top: 26px;
-  padding-bottom: 26px;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  @media (min-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
+// .contact__wrapper--catalog {
+//   @media (min-width: $tablet) {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//   }
+// }
 
 .contact__text {
   font-family: $oswald;
@@ -79,7 +78,7 @@
 .contact__city {
   @media (min-width: $tablet) {
     display: block;
-    margin-top: 20px;
+    margin-top: 19px;
   }
 }
 

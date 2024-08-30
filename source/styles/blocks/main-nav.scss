@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 21px 14px 20px;
+  padding: 13px 21px 15px 20px;
 
   @media (min-width: $tablet) {
-    padding: 25px 34px 0 30px;
+    padding: 25px 0 65px;
   }
 
   @media (min-width: $desktop) {
-    padding: 55px 110px 29px;
+    padding: 55px 0 74px;
   }
 }
 
@@ -36,8 +36,14 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    width: 450px;
+    flex-wrap: wrap;
+    width: 440px;
     gap: 33px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    width: 478px;
   }
 }
 
@@ -61,7 +67,11 @@
 
   @media (min-width: $desktop) {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
   }
+}
+
+.main-nav__link--catalog {
+  color: #000000;
 }

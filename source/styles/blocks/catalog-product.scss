@@ -12,28 +12,38 @@
   margin-bottom: 41px;
 
   @media (min-width: $tablet) {
-    margin-top: 65px;
+    margin-top: 0;
     margin-bottom: 84px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
-.catalog-product__wrapper {
-  @media (min-width: $tablet) {
-    display: grid;
-    grid-template-columns: 324px 324px;
-    gap: 60px;
-  }
-}
+// .catalog-product__wrapper {
+//   border-top: 1px solid #e6e6e6;
+//   border-bottom: 1px solid #e6e6e6;
+// }
 
 .catalog-product__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 245px);
+    gap: 80px;
+  }
 }
-
-// .catalog-product__card {
-
-// }
 
 .catalog-product__link {
   text-decoration: none;
@@ -47,28 +57,15 @@
 .catalog-product__card {
   position: relative;
   padding: 20px 0 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #e6e6e6;
+
+  &:first-child {
+    border-top: none;
+  }
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr;
-  }
-}
-
-.catalog-product__title-card {
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet) {
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    width: 135px;
-    margin: 41px auto 20px;
+    border: none;
   }
 }
 
@@ -85,6 +82,7 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 21px;
+  grid-column: 1 / 2;
 
   @media (min-width: 738px) {
     font-size: 16px;
@@ -97,10 +95,6 @@
 .catalog-product__card--more {
   padding-top: 78px;
   padding-bottom: 25px;
-  background-size: 30px;
-  background-repeat: no-repeat;
-  background-position: center -60px;
-  background-image: url("../../icons/plus-catalog.svg");
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet) {
@@ -138,12 +132,37 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 8px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../../icons/plus-catalog.svg");
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 53px;
+  }
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 24px;
     margin: 160px auto 23px;
     width: 135px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      bottom: 110px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::before {
+      bottom: 100px;
+    }
   }
 }
 

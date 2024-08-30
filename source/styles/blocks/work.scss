@@ -60,12 +60,22 @@
     height: 60px;
     left: 0;
     top: 0;
+    background-position: center;
   }
 
   @media (min-width: $tablet) {
     padding-top: 151px;
     padding-bottom: 57px;
     padding-left: 0;
+
+    &::before {
+      background-color: #68b738;
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: 40px;
+      background-position: center;
+    }
   }
 }
 
