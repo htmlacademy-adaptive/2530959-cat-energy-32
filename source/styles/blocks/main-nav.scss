@@ -1,5 +1,6 @@
 .main-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 13px 21px 15px 20px;
@@ -13,30 +14,86 @@
   }
 }
 
+
 .main-nav__toogle {
-  mask-image: url("../../icons/button-open.svg");
   width: 24px;
   height: 24px;
-  background-color: #000000;
+  cursor: pointer;
+  border: none;
+  background: 0 0;
+  padding: 0;
 
   @media (min-width: $tablet) {
     display: none;
   }
 }
 
-// .main-nav__wrapper {
+.main-nav--closed .main-nav__toogle::before {
+  content: "";
+  background-color: #000000;
+  min-width: 320px;
+  height: 100%;
+  display: block;
+  mask-repeat: no-repeat;
+  mask-image: url("../../icons/button-open.svg");
+}
 
-// }
+@media (max-width: $mobile) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__toogle::before {
+    content: "";
+    background-color: #000000;
+    width: 75%;
+    height: 75%;
+    display: block;
+    margin: 0 auto;
+    mask-repeat: no-repeat;
+    mask-image: url("../../icons/button-close.svg");
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    z-index: 10;
+    background-color: #ffffff;
+    min-width: 320px;
+    min-height: 199px;
+    display: block;
+    top: 52px;
+    left: 0;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+}
+
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: none;
+
+  @media (max-width: $mobile) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   @media (min-width: $tablet) {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row;
     width: 440px;
     gap: 33px;
     justify-content: space-between;
@@ -44,6 +101,41 @@
 
   @media (min-width: $desktop) {
     width: 478px;
+  }
+}
+
+.main-nav__list a {
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-nav__list:first-child {
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    border: none;
   }
 }
 

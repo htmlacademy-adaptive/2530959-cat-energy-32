@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <header class="main-header main-header--index">
-    <nav class="main-nav container">
+    <nav class="main-nav main-nav--opened main-nav--nojs container">
       <a class="main-header__logo" href="#">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-cat-desktop.svg" width="70" height="59" type="image/svg+xml">
@@ -151,6 +151,7 @@
           <source media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" type="image/png" width="768" height="400">
           <img class="contact__image" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362" alt="Местоположение магазина по адресу: ул. Большая Конюшенная, д. 19/8">
         </picture>
+        <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3018780133102!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sus!4v1725307685046!5m2!1sru!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
@@ -178,14 +179,12 @@
           </li>
         </ul>
       </div>
-      <a class="main-footer__copyright-link copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__copyright-link copyright-link copyright-link--image" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright-link__text">HTML Academy</span>
-        <svg class="copyright-link__logo" width="27" height="34">
-          <use href="icons/stack.svg#logo-html"></use>
-        </svg>
       </a>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

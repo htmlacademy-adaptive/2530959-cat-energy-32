@@ -23,20 +23,40 @@
 // }
 
 .social__link {
-  display: block;
-  background-color: #666666;
-  width: 24px;
-  height: 24px;
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #666666;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before,
+  &:focus-visible::before,
+  &:active::before {
+    background-color: #68b738;
+  }
 }
 
 .social__link--vk {
-  mask-image: url("../../icons/vkontakte.svg");
+  &::before {
+    content: "";
+    mask-image: url("../../icons/vkontakte.svg");
+  }
 }
 
 .social__link--youtube {
-  mask-image: url("../../icons/youtube.svg");
+  &::before {
+    content: "";
+    mask-image: url("../../icons/youtube.svg");
+  }
 }
 
 .social__link--tg {
-  mask-image: url("../../icons/telegram.svg");
+  &::before {
+    content: "";
+    mask-image: url("../../icons/telegram.svg");
+  }
 }

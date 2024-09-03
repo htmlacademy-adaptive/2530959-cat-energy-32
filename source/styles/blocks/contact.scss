@@ -90,3 +90,14 @@
   display: block;
   margin: auto;
 }
+
+.contact__map {
+  width: 100%;
+  border: none;
+  height: 362px;
+  display: none;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
+}

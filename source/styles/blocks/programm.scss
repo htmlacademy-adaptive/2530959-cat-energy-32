@@ -214,9 +214,21 @@
     position: absolute;
     background-image: url("../../icons/arrow.svg");
     width: 24px;
-    height: 12px;
+    height: 10px;
     top: 6px;
     left: 102px;
+    transition: transform 0.3s linear;
+    transform-origin: left center;
+  }
+
+  &:hover::after,
+  &:focus-visible::after,
+  &:active::after {
+    transform: scaleX(1.35);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet) {
