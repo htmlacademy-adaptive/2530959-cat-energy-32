@@ -4,17 +4,14 @@
 
 .social__list {
   list-style-type: none;
-  padding: 20px 0;
+  padding: 0;
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin: 0;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet) {
     margin: 0;
-    border: none;
   }
 }
 
