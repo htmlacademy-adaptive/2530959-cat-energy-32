@@ -8,37 +8,15 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
-  margin-top: 0;
-  margin-bottom: 49px;
-
-  @media (min-width: $tablet) {
-    font-size: 32px;
-    line-height: 32px;
-    margin: 74px 0 80px 40px;
-  }
 }
 
 .additional-product__list {
   list-style-type: none;
-  padding: 0;
-  margin-bottom: 35px;
 }
 
-.additional-product__item {
-  display: grid;
-  margin-bottom: 32px;
+// .additional-product__item {
 
-  @media (min-width: $tablet) {
-    padding: 0 38px;
-  }
-}
-
-.additional-product__item-wrapper {
-  @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
+// }
 
 .additional-product__item-title {
   font-family: $oswald;
@@ -46,14 +24,6 @@
   font-size: 16px;
   line-height: 16px;
   color: #222222;
-  margin-top: 0;
-  margin-bottom: 13px;
-  text-transform: uppercase;
-}
-
-.additional-product__container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .additional-product__item-type {
@@ -62,12 +32,6 @@
   font-size: 14px;
   line-height: 14px;
   color: $base-color-text;
-  margin-top: 0;
-  margin-bottom: 13px;
-
-  @media (min-width: $tablet) {
-    margin-right: 49px;
-  }
 }
 
 .additional-product__item-price {
@@ -84,16 +48,8 @@
 
 .additional-product__wrapper {
   background-color: $bg-basic-green;
-  background-image: url("../../images/cat-in-bag-mobile@1x.jpg");
-  background-size: cover;
-  width: 280px;
-  height: 290px;
-
-  @media (min-width: $tablet) {
-    background-image: url("../../images/cat-in-bag-tablet@1x.jpg");
-    width: 707px;
-    height: 200px;
-  }
+  background-image: url("../../icons/icon-gift.svg");
+  background-repeat: no-repeat;
 }
 
 .additional-product__wrapper-title {
@@ -103,32 +59,4 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
-  margin: 0;
-  padding: 187px 61px 43px 58px;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../icons/icon-gift.svg");
-    background-repeat: no-repeat;
-    width: 78px;
-    height: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 59px;
-  }
-
-  @media (min-width: $tablet) {
-    padding: 71px 125px 69px 421px;
-    text-align: start;
-  }
-
-  &::before {
-    width: 80px;
-    height: 82px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 77px;
-  }
 }

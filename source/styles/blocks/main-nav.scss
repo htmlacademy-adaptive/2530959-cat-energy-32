@@ -2,14 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 21px 14px 20px;
+  width: 280px;
+  margin-top: 13px;
 
   @media (min-width: $tablet) {
-    padding: 25px 34px 0 30px;
+    width: 704px;
   }
 
   @media (min-width: $desktop) {
-    padding: 55px 110px 29px;
+    width: 1220px;
   }
 }
 

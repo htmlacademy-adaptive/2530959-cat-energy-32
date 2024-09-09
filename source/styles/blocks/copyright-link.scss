@@ -1,22 +1,11 @@
 .copyright-link {
+  display: block;
   color: #666666;
   text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-
-  @media (min-width: $tablet) {
-    margin: 0;
-  }
 }
 
 .copyright-link__text {
   color: $base-color-text;
-
-  @media (min-width: $tablet) {
-    margin-right: 23px;
-  }
 }
 
 .copyright-link__logo {

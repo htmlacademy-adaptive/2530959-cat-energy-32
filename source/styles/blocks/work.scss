@@ -1,14 +1,6 @@
-.work {
-  margin-bottom: 49px;
+// .work {
 
-  @media (min-width: $tablet) {
-    margin-bottom: 92px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-bottom: 69px;
-  }
-}
+// }
 
 // .work__wrapper {
 
@@ -20,59 +12,23 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  margin-top: 0;
-  margin-bottom: 40px;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 32px;
-    font-size: 60px;
-    line-height: 60px;
-  }
 }
 
 .work__list {
   list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 37px 153px;
-  }
-
-  @media (min-width: $desktop) {
-    gap: 37px 94px;
-  }
 }
 
 .work__item {
   position: relative;
-  padding-left: 80px;
-
-  &::before {
-    background-color: #68b738;
-    width: 60px;
-    height: 60px;
-    left: 0;
-    top: 0;
-  }
-
-  @media (min-width: $tablet) {
-    padding-top: 151px;
-    padding-bottom: 57px;
-    padding-left: 0;
-  }
 }
 
 .work__item--leaf::before {
   content: "";
   background-image: url("../../icons/icon-leaf.svg");
   background-size: 30px 32px;
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
   position: absolute;
   background-repeat: no-repeat;
 }
@@ -81,6 +37,9 @@
   content: "";
   background-image: url("../../icons/icon-powder.svg");
   background-size: 26px 29px;
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
   position: absolute;
   background-repeat: no-repeat;
 }
@@ -89,6 +48,9 @@
   content: "";
   background-image: url("../../icons/icon-eat.svg");
   background-size: 25px 30px;
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
   position: absolute;
   background-repeat: no-repeat;
 }
@@ -97,6 +59,9 @@
   content: "";
   background-image: url("../../icons/icon-watch.svg");
   background-size: 26px 31px;
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
   position: absolute;
   background-repeat: no-repeat;
 }
@@ -107,15 +72,4 @@
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
-  margin: 0;
-
-  @media (min-width: $tablet) {
-    font-size: 16px;
-    line-height: 24px;
-    max-width: 242px;
-  }
-
-  @media (min-width: $desktop) {
-    max-width: 234px;
-  }
 }
