@@ -1,28 +1,12 @@
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 280px;
-  margin-top: 13px;
+// .main-nav {
 
-  @media (min-width: $tablet) {
-    width: 704px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 1220px;
-  }
-}
+// }
 
 .main-nav__toogle {
   mask-image: url("../../icons/button-open.svg");
   width: 24px;
   height: 24px;
   background-color: #000000;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
 }
 
 // .main-nav__wrapper {
@@ -30,16 +14,7 @@
 // }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
-  display: none;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    width: 450px;
-    gap: 33px;
-  }
 }
 
 // .main-nav__item {
@@ -54,15 +29,4 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-
-  @media (min-width: $tablet) {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  @media (min-width: $desktop) {
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 30px;
-  }
 }
