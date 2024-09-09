@@ -1,17 +1,17 @@
 .card {
-  padding: 20px 0 25px;
+  padding: 20px 20px 25px;
 
   @media (min-width: $tablet) {
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
     width: 324px;
     box-sizing: border-box;
-    padding: 10px 0 40px;
+    padding: 10px 37px 40px;
   }
 
   @media (min-width: $desktop) {
     width: 245px;
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
-    box-sizing: border-box;
+    padding: 10px 38px 40px;
   }
 }
 
@@ -85,6 +85,7 @@
   font-size: 12px;
   line-height: 16px;
   color: $base-color-text;
+  margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 16px;
@@ -96,13 +97,29 @@
 .card__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 280px;
 
   @media (min-width: $tablet) {
-    margin: 0 37px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 250px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 169px;
+    margin: 0;
   }
 }
 
 .card__wrapper-more {
   grid-template-columns: 1fr;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 250px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 169px;
+    margin: 0;
+  }
 }
