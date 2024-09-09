@@ -30,7 +30,6 @@
     box-sizing: border-box;
     top: 95px;
     left: calc(50% - 610px);
-    z-index: 10;
   }
 }
 
@@ -83,9 +82,9 @@
   }
 }
 
-.contact__map-wrapper {
-  position: relative;
-}
+// .contact__map-wrapper {
+
+// }
 
 .contact__image {
   display: block;
@@ -96,9 +95,7 @@
   width: 100%;
   border: none;
   height: 362px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: none;
 
   @media (min-width: $tablet) {
     height: 400px;
