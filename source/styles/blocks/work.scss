@@ -14,56 +14,32 @@
   color: #000000;
 }
 
-.work__list {
-  list-style-type: none;
-}
+// .work__list {
+//   list-style-type: none;
+// }
 
-.work__item {
-  position: relative;
-}
+// .work__item {
 
-.work__item--leaf::before {
+// }
+
+.work__item--leaf {
+  background-color: green;
   background-image: url("../../icons/icon-leaf.svg");
-  content: "";
-  background-size: 30px 32px;
-  background-color: #68b738;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  background-repeat: no-repeat;
 }
 
-.work__item--powder::before {
+.work__item--powder {
+  background-color: green;
   background-image: url("../../icons/icon-powder.svg");
-  content: "";
-  background-size: 26px 29px;
-  background-color: #68b738;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  background-repeat: no-repeat;
 }
 
-.work__item--eat::before {
+.work__item--eat {
+  background-color: green;
   background-image: url("../../icons/icon-eat.svg");
-  content: "";
-  background-size: 25px 30px;
-  background-color: #68b738;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  background-repeat: no-repeat;
 }
 
-.work__item--watch::before {
+.work__item--watch {
+  background-color: green;
   background-image: url("../../icons/icon-watch.svg");
-  content: "";
-  background-size: 26px 31px;
-  background-color: #68b738;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  background-repeat: no-repeat;
 }
 
 .work__text {
