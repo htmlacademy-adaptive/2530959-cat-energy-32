@@ -4,6 +4,7 @@
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
+@import "./common/container.scss";
 
 /* BLOCKS */
 @import "./blocks/button.scss";
@@ -15,9 +16,11 @@
 @import "./blocks/programm.scss";
 @import "./blocks/work.scss";
 @import "./blocks/example.scss";
+@import "./blocks/slider__images.scss";
 @import "./blocks/contact.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
+@import "./blocks/copyright-link.scss";
 @import "./blocks/catalog-product.scss";
 @import "./blocks/card.scss";
 @import "./blocks/additional-product.scss";
