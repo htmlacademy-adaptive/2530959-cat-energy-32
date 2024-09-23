@@ -1,7 +1,9 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ольга Чулакова](https://up.htmlacademy.ru/adaptive/32/user/2530959).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+* Сайт: [Мой проект Кэт энерджи»](https://olga-chulakova.github.io/2530959-cat-energy-32/)
+y
 
 ---
 
