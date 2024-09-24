@@ -226,19 +226,19 @@
 
 .additional-product__wrapper {
   background-color: $bg-basic-green;
-  background-image: image-set("../../images/cat-bag-mobile@1x.webp" 1x type("image/webp"), "../../images/cat-bag-mobile@2x.webp" 2x type("image/webp"), "../../images/cat-bag-mobile@1x.jpg" 1x type("image/jpg"), "../../images/cat-bag-mobile@2x.jpg" 2x type("image/jpg"));
+  background-image: image-set("../images/cat-bag-mobile@1x.webp" 1x type("image/webp"), "../images/cat-bag-mobile@2x.webp" 2x type("image/webp"), "../images/cat-bag-mobile@1x.jpg" 1x type("image/jpg"), "../images/cat-bag-mobile@2x.jpg" 2x type("image/jpg"));
   background-size: cover;
   width: 280px;
   height: 290px;
 
   @media (min-width: $tablet) {
-    background-image: image-set("../../images/cat-bag-tablet@1x.webp" 1x type("image/webp"), "../../images/cat-bag-tablet@2x.webp" 2x type("image/webp"), "../../images/cat-bag-tablet@1x.jpg" 1x type("image/jpg"), "../../images/cat-bag-tablet@2x.jpg" 2x type("image/jpg"));
+    background-image: image-set("../images/cat-bag-tablet@1x.webp" 1x type("image/webp"), "../images/cat-bag-tablet@2x.webp" 2x type("image/webp"), "../images/cat-bag-tablet@1x.jpg" 1x type("image/jpg"), "../images/cat-bag-tablet@2x.jpg" 2x type("image/jpg"));
     width: 707px;
     height: 200px;
   }
 
   @media (min-width: $desktop) {
-    background-image: image-set("../../images/cat-bag-desktop@1x.webp" 1x type("image/webp"), "../../images/cat-bag-desktop@2x.webp" 2x type("image/webp"), "../../images//cat-bag-desktop@1x.jpg" 1x type("image/jpg"), "../../images/cat-bag-desktop@2x.jpg" 2x type("image/jpg"));
+    background-image: image-set("../images/cat-bag-desktop@1x.webp" 1x type("image/webp"), "../images/cat-bag-desktop@2x.webp" 2x type("image/webp"), "../images//cat-bag-desktop@1x.jpg" 1x type("image/jpg"), "../images/cat-bag-desktop@2x.jpg" 2x type("image/jpg"));
     width: 245px;
     height: 288px;
   }
